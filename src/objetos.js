@@ -60,7 +60,7 @@ console.log(user03)
 
 user01.filhas = {
     filha01 : "Luana",
-    filha02 : "Julia"
+    filha02 : "Julia    "
 }
 
 console.log(user01)
