@@ -44,11 +44,12 @@ const contagemRegressiva = (numero) => {
 const formulario1 = document.getElementById('formulario-01');
 
 if (formulario1)
-    formulario1.addEventListener('submit', (evento) => {
+    formulario1.addEventListener('submit', function (evento) {
         evento.preventDefault();
         evento.stopPropagation();
 
-        if (this.getAttribute('class').match(/erro/)) {
+        const classAttribute = this.getAttribute('class');
+        if (classAttribute && classAttribute.match(/erro/)) {
             return false;
         }
         
